@@ -11,3 +11,6 @@ https://www.youtube.com/watch?v=0TCh01BBlrM
 Codebeauty
 
 https://www.youtube.com/watch?v=qaGzc56Rekg
+
+To learn C++ concepts and theory, check out:
+https://www.youtube.com/watch?v=nvrylVckaLU&list=PLrjkTql3jnm-Voi7giH4JITCi6cuZSN42&index=3
