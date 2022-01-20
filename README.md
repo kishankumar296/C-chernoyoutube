@@ -1,4 +1,4 @@
-# C-chernoyoutube
+# C++ Learning repository
 This repository will have C++ videos from the youtube channels,\\
 
 Cherno
