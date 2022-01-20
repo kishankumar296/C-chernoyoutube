@@ -3,4 +3,4 @@
 using namespace std;
 
 void InitLog();
-void Log(const char* message);
+void Log(const char*);

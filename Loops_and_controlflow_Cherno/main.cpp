@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<iostream>
-#include"includes/Log.h"
-xxxs
+#include "includes/Logi.h"
+
 using namespace std;
 
 // Tutorials for header files, loops and control flow continue, break etc;
@@ -14,7 +14,22 @@ using namespace std;
 int main(){
 
     InitLog();
-    Log("Hello boss, headers are working fine");
+    for (int i=0; i<5;i++){
+
+        if (i%2==0)
+        {
+            Log("Hello boss, headers are working fine");
+            cout<<i<<endl;
+        }
+        
+        // Log("Hello boss, headers are working fine"); // Control flow statements are continue, break etc.
+    }
     cin.get();
 
+    int i =0;
+    while(i<5){
+         Log("Hello boss, headers are working fine");
+         i++;
+
+    }
 }
