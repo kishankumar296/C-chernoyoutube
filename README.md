@@ -18,7 +18,15 @@ https://www.youtube.com/watch?v=nvrylVckaLU&list=PLrjkTql3jnm-Voi7giH4JITCi6cuZS
 C++ Courses to go through are:
 
 Stanford: https://web.stanford.edu/class/archive/cs/cs106l/cs106l.1184/lectures.html 
+
+
 TU Delft: OOPs in Scientific computing
+
+
 Archer Uk national labs:  https://www.youtube.com/watch?v=0NsRloi4xd4
+
+
 Doubts: https://www.cplusplus.com/
+
+
 Eigen library: https://www.youtube.com/watch?v=LAVGLTHXmnE
