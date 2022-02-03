@@ -8,46 +8,46 @@ using namespace std;
 //Cherno
 // To include headers use g++ -o main.exe main.cpp includes/calculation.cpp
 
-
-// Constructor special method which runs when special method is created. Used to initialize the memory
-// Destructors uninitialize the memory. When the scope ends, destructors gets called and it gets deleted.
-
-class Entity{
+// Inheritance 
+class Entity
+{
     public:
         float X,Y;
 
-        Entity(){
-            X = 0;
-            Y=0;
-            cout<<"Constructed entity"<<endl;
-        };
-
-        //Entity(float x, float y){
-          //      X = x;
-           //     Y = y;
-
-        //}
+        void Move(float xa, float ya)
+        {
+            X += xa;
+            Y += ya;
+        } 
 
 
-        void Print(){
-            cout<<X<<","<<Y<<endl;
+};
 
-        }
-// Destructors used here
-        ~Entity(){
+class Player:public Entity
+{
+    public:
+        const char* Name;
 
-            cout<<"Destroyed entity"<<endl;
+        void Printname(){
+
+            cout<<Name<<endl;
         }
 
 
 };
 
 
+// float size is 4
+
+// Player class is an Entity + additional functionalities for the class
+
 
 int main(){
-    Entity e;
-    
-    e.Print();
+    Player player1;
+    player1.Move(5,5);
+    player1.X =2;
 
-
+    cout<<player1.Y<<endl;
+    player1.Move(5,5);
+    cout<<player1.Y;
 }
