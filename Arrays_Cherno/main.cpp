@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<iostream>
 #include "includes/Logi.h"
-
+#include <array>
 using namespace std;
 
 // Tutorials for Constructors, destructors and Inheritance;
@@ -50,10 +50,10 @@ int main(){
 
     delete[] another;
 
-
+    array<int,5> another;
 
     cout<<example[2]<<endl;
-
+    
     
     cout<<another[2]<<endl;
     cout<<"Number of elements is"<<sizeof(example)/sizeof(int);

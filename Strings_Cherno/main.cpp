@@ -2,10 +2,13 @@
 #include<iostream>
 #include "includes/Logi.h"
 
+#include <cstring>
+
+#include <stdlib.h>
 using namespace std;
 
 // Tutorials for Constructors, destructors and Inheritance;
-//Cherno
+// Cherno
 // To include headers use g++ -o main.exe main.cpp includes/calculation.cpp
 
 // Arrays 
@@ -13,51 +16,27 @@ using namespace std;
 
 // Return an array
 
-class Entity
-{
-    public:
-        int example[5];
-
-    Entity(){
-        for (int i =0; i<5;i++)
-            example[i] = 2;
-
-
-    }
-
-
-};
+// Name a pointer only via array if you want to change the name
 
 int main(){
+    using namespace std::string_literals;
 
-    int example[5]; // array is a pointer which is created in stack memory
-    int *ptr = example; // 
+    string name0 = "Chrno"s + "helloo"; // add s in between to add two strings
+    name0[3] = 's'; 
 
-    example[0] = 2;
-    example[4] = 5;
+    cout<<name0<<endl;
 
-    for (int i =0; i<5;i++)
-        example[i] = 1;
+    const char* ex = R"(Line1
+    Line2
+    Line 3
+    Line4)"; // Letter R ignores escape characters 
 
-    example[2] = 5;
-    *(ptr + 2) = 6; // Adding 2 elements after pointer being example so
+    cout<<ex<<endl;
+    const char name[8] = "Chno\0oo";
+    cout<< strlen(name) <<endl;
 
-
-    int* another = new int[5]; // Created in heap memeory 
-
-    for (int i =0; i<5;i++)
-        another[i] = 2;
-
-    delete[] another;
-
-
-
-    cout<<example[2]<<endl;
-
-    
-    cout<<another[2]<<endl;
-    cout<<"Number of elements is"<<sizeof(example)/sizeof(int);
-    cin.get() ; 
+    const wchar_t* name2 = L"Cherno";
+    const char16_t* name3 = u"Cherno";
+    const char32_t* name4 = U"Cherno";
 }
 
-// lifetimes heap memory: Memory fragmentation
